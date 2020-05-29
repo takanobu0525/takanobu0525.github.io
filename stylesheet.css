@@ -1,0 +1,1049 @@
+body{
+  display: none;
+  margin: 0;
+  color: white;
+  font-family: YuMincho;
+  background-image: url(img/back.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+#top,#int,#work,#skill,#cpntact{
+  margin: 0 auto;
+}
+/* header */
+
+header{
+  background-color: rgba(77, 77, 77, 0.9);
+  width: 100%;
+  z-index: 10;
+  height:80px;
+  padding: 0 100px 0 50px;
+  position: fixed;
+
+}
+header .header-left{
+  font-family: YuMincho;
+  letter-spacing: 5px;
+  text-align: center;
+  height: 80px;
+  float: left;
+  line-height: 28px;
+}
+
+header .header-left p{
+  margin: 0;
+  font-size: 28px;
+  padding-top: 15px;
+  text-shadow: 3px 3px 1px black;
+}
+
+header nav{
+  margin-right: 100px;
+}
+
+header .header-right{
+  float: right;
+}
+
+header a{
+  padding-left: 3px;
+color: white;
+text-decoration: none;
+}
+
+header .header-right li{
+  font-family: YuMincho;
+  list-style: none;
+  float:left;
+  width: 120px;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+  border-left: 3px solid rgba(128, 128, 128, 1);
+}
+
+header .header-right li :hover{
+  opacity: 0.6;
+  transition: 0.5s;
+  border-bottom: 4px double white;
+}
+header .header-right li :active{
+ font-size: 18px;
+ opacity: 1;
+ transition: none;
+ border: none;
+}
+
+/* top */
+
+#top{
+  background-color: rgba(178, 178, 178, 0.3);
+  text-align: center;
+  display: block;
+  height: 400px;
+  padding: 250px 0 350px 0;
+  width: 1080px;
+  max-width: 100%;
+}
+
+#top p{
+  text-shadow: 2px 2px 1px black;
+  display: none;
+}
+
+#top .name{
+  font-size: 45px;
+  margin: 0;
+}
+
+#top h1{
+  font-style: oblique;
+  font-size: 120px;
+  margin: 0;
+  text-shadow: 5px 5px 1px black;
+  display: none;
+}
+
+#top .text{
+  font-size: 40px;
+margin: 0;
+}
+
+/* introduction */
+
+#int{
+  max-width: 1080px;
+  background-color: rgba(179, 179, 179, 0.6);
+}
+
+#int h2{
+  font-style: oblique;
+  font-size: 45px;
+  text-align: center;
+  padding-top: 150px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-shadow: 3px 3px 1px black;
+}
+
+#int .contact{
+  display: flex;
+  margin: 0 100px;
+}
+
+#int .left-img{
+  width: 310px;
+  height: 310px;
+  border-radius: 30px;
+  border: outset 10px #808080;
+}
+
+#int .right-text{
+  font-size: 18px;
+  width: 500px;
+  height: 300px;
+  margin-left: 80px;
+}
+
+#int p{
+  height: 300px;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(179, 179, 179, 0.8);
+  border: 3px double black;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+
+/* work */
+
+#work{
+  max-width: 1080px;
+  background-color: rgba(179, 179, 179, 0.6);
+}
+
+#work h2{
+  font-style: oblique;
+  font-size: 45px;
+  padding-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 0;
+  text-shadow: 3px 3px 1px black;
+}
+
+#work .work-list{
+  display: flex;
+}
+
+#work .card-item{
+  text-align: center;
+  padding:30px 10px 10px 10px;
+  margin: 0 20px;
+  width: 320px;
+  height: 500px;
+  background-color: #808080;
+  border: 3px double black;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+#work .card-item a{
+  font-size: 18px;
+}
+
+#work .name{
+  font-size: 20px;
+}
+
+#work img{
+  width: 300px;
+  height: 250px;
+}
+#work img:hover{
+  opacity: 0.6;
+  transition: 1s;
+}
+
+/* skill */
+
+#skill{
+  max-width: 1080px;
+  background-color: rgba(179, 179, 179, 0.6);
+}
+
+#skill h2{
+  font-style: oblique;
+  font-size: 45px;
+  text-align: center;
+  margin: 0;
+  padding: 150px 0 50px 0;
+  text-shadow: 3px 3px 1px black;
+}
+
+#skill .list{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skill .skill{
+  background-color: #808080;
+  width: 460px;
+  margin: auto;
+  margin-top: 10px;
+  border: 3px double black;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+#skill img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 20px 0 80px 20px;
+  float: left;
+}
+
+#skill .skill-name{
+  font-size: 25px;
+}
+
+/* contact */
+
+#contact{
+  max-width: 1080px;
+  margin: auto;
+  background-color: rgba(179, 179, 179, 0.6);
+}
+
+#contact h2{
+  font-style: oblique;
+  font-size: 45px;
+  text-align: center;
+  margin: 0;
+  padding-top: 150px;
+  text-shadow: 3px 3px 1px black;
+}
+
+#contact .text{
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0 50px 0;
+}
+
+#contact .contact-list{
+  display: flex;
+  margin: 30px 50px 0 50px;
+  padding-bottom: 35px;
+}
+
+#contact form{
+  text-align: left;
+  margin-left: 150px;
+  width: 340px;
+  border-right: 3px solid black;
+}
+
+#contact form input{
+  width: 250px;
+  height: 25px;
+}
+
+#contact form p{
+  margin: 5px 0;
+}
+
+#contact form textarea {
+  width: 250px;
+  height: 75px;
+  margin-bottom: 20px;
+}
+
+#contact .button{
+  font-size: 20px;
+  width: 250px;
+  height: 50px;
+  margin-left: 30px;
+  box-shadow: 2px 2px 1px black;
+}
+#contact ul{
+  padding: 18px 0 0 18px;
+}
+#contact li{
+  opacity: 0.8;
+  list-style: none;
+  width: 250px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 20px 0 20px 20px;
+}
+#contact li:hover{
+  opacity: 1;
+}
+#contact li:active{
+  position: relative;
+  top: 2px;
+  left: 2px;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+#contact li .sns-list{
+  width: 480px;
+  margin-top: 10px;
+}
+
+#contact .sns-list{
+  margin: 0 auto;
+}
+
+#contact .sns-list img{
+  width: 35px;
+  height: 35px;
+  padding-left: 20px;
+  float: left;
+}
+
+#contact .sns-list span{
+  text-align: left;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.sns-list li{
+  border-radius: 15px;
+  display: block;
+  width: 100px;
+}
+
+.sns-list a{
+  width: 100%;
+  padding-top: 8px;
+  display: inline-block;
+color: white;
+text-decoration: none;
+
+}
+
+.sns-list .facebook{
+  background-color: rgba(24, 119, 242, 0.9);
+  box-shadow: 2px 2px 2px 2px black;
+  color: white;
+}
+
+.sns-list .twitter{
+  background-color: rgba(29, 161, 242, 0.9);
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.sns-list .instagram{
+  background-color: rgba(217, 49, 119, 0.9);
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+/* pagetop */
+
+footer{
+}
+#pagetop .pagetop{
+  width: auto;
+  text-align: center;
+  height: 50px;
+  font-size: 30px;
+  padding-top: 2px;
+  margin: 0;
+  background-color: rgba(178, 178, 178, 0.7);
+  text-shadow: 2px 2px 1px black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#pagetop .pagetop:hover{
+  background-color: rgba(178, 178, 178, 1);
+  transition: 0.5s;
+}
+
+#pagetop a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* copyright */
+
+#pagetop .copy-text{
+  text-align: center;
+  width: auto;
+  height: 30px;
+  margin: 0;
+  background-color: #4d4d4d;
+}
+
+@media screen and (max-width: 1024px) {
+  #top{
+  height: 500px;
+  padding-top: 300px;
+  }
+
+  #top h1{
+    font-size: 85px;
+  }
+  #top .text{
+    font-size: 40px;
+  }
+
+  header{
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  header .header-left{
+    display: none;
+  }
+
+  header .btnlist{
+    display: block;
+    width: 100%;
+  }
+
+  header .header-right{
+    float: none;
+    margin: 0 auto;
+  }
+
+  header .header-right li{
+    font-size: 20px;
+    width: 18%;
+    border: none;
+    margin: 15px 1%;
+    background-color: rgba(50, 50, 50, 1);
+	  box-shadow: 1px 1px 1px 1px white;
+    border-radius: 30px;
+
+  }
+
+  header .header-right li :hover{
+    opacity:1;
+    transition: 0;
+    border-bottom: none;
+  }
+
+  header .header-right li :active{
+    font-size: 20px;
+  }
+
+  #top h1{
+    font-style: oblique;
+    font-size: 95px;
+    margin: 0;
+    text-shadow: 5px 5px 1px black;
+    display: none;
+  }
+
+
+
+  #int .contact{
+    flex-wrap: wrap;
+  }
+  #int img{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  #int h2{
+    padding-top: 100px;
+  }
+
+  #int .right-text{
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  #work .work-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #work h2{
+    padding-top: 100px
+  }
+
+  #work .card-item{
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+ #work .card-item a{
+   text-decoration: none;
+ }
+  #work img{
+    width: 300px;
+    height: 250px;
+  }
+
+	#work .link{
+	margin: 0 auto;
+	color: white;
+		padding: 0 10px;
+		border-radius: 15px;
+		box-shadow: 1px 1px 1px 1px white;
+	  width: 80px;
+	  background-color: black;
+    text-decoration: none;
+	}
+
+  #skill .skill{
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  #skill h2{
+    padding-top: 100px;
+  }
+
+  #contact{
+  width: 100%;
+}
+
+#contact form{
+  text-align: left;
+  margin: auto;
+  border: none;
+}
+
+#contact .contact-list{
+  margin: 0 10%;
+}
+
+#contact{
+  max-width: 1080px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(179, 179, 179, 0.6);
+}
+
+#contact h2{
+  font-style: oblique;
+  font-size: 45px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  text-shadow: 3px 3px 1px black;
+}
+
+#contact .text{
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0 50px 0;
+}
+#contact .title{
+  margin: auto;
+}
+
+#contact .contact-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+#contact form{
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 40px;
+  border-right: none;
+}
+
+#contact form input{
+  width: 250px;
+  height: 30px;
+}
+
+#contact form p{
+  margin: 5px 0 auto;
+}
+
+#contact form textarea {
+  width: 250px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+#contact ul{
+  padding:15px 0 0 0;
+}
+}
+
+@media (max-width: 640px) {
+  header{
+    background-color: rgba(77, 77, 77, 0.9);
+    width: 100%;
+    z-index: 10;
+    height: 60px;
+    padding: 0;
+	margin: 0 auto;
+    position: fixed;
+
+  }
+  header .header-left{
+    display: none;
+  }
+
+  header .header-left p{
+    display: none;
+  }
+
+  header nav{
+    margin: 0 auto;
+	margin-right: 15px;
+	padding: 0;
+	width: auto;
+  }
+
+  header .header-right{
+    float: none;
+	padding: 0;
+	margin: 0 auto;
+
+	width: 100%;
+  }
+
+
+
+  header .header-right li{
+  text-align: center;
+	box-shadow: 1px 1px 1px 1px white;
+  margin: 0 2px;
+  width: 18%;
+	  height: 30px;
+  font-size:16px;
+  padding: 0;
+  padding-top: 5px;
+  }
+  header .header-right li :active{
+    font-size: 17px;
+  }
+  /* top */
+
+  #top{
+    background-color: rgba(178, 178, 178, 0.3);
+    text-align: center;
+    display: block;
+    height: 200px;
+    padding: 250px 0;
+    width: 1080px;
+    max-width: 100%;
+  }
+
+  #top p{
+    text-shadow: 2px 2px 1px black;
+    display: none;
+  }
+
+  #top .name{
+    font-size: 25px;
+    margin: 0;
+  }
+
+  #top h1{
+    font-style: oblique;
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 5px 5px 1px black;
+    display: none;
+  }
+
+  #top .text{
+    font-size: 25px;
+  margin: 0;
+  }
+
+  /* introduction */
+
+  #int{
+    max-width: 1080px;
+    background-color: rgba(179, 179, 179, 0.6);
+  }
+
+  #int h2{
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 80px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px 1px black;
+  }
+
+  #int .contact{
+    display: flex;
+    margin: 0 auto;
+    height: 700px;
+  }
+
+  #int .left-img{
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  #int .right-text{
+    font-size: 16px;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 15px
+  }
+
+  #int span{
+    font-size: 20px;
+  }
+
+  #int p{
+    height: 380px;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(179, 179, 179, 0.8);
+    border: 3px double black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+
+  /* work */
+
+  #work{
+    max-width: 1080px;
+    background-color: rgba(179, 179, 179, 0.6);
+  }
+
+  #work h2{
+    font-style: oblique;
+    font-size: 30px;
+    padding-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 3px 3px 1px black;
+  }
+
+  #work .work-list{
+    display: flex;
+  }
+
+  #work .card-item{
+    text-align: center;
+    padding:30px 10px 10px 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    height: 450px;
+    background-color: #808080;
+    border: 3px double black;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+  #work .card-item a{
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  #work .name{
+    font-size: 20px;
+  }
+
+  #work img{
+    width: 250px;
+    height: 250px;
+  }
+  #work img:hover{
+    width: 280px;
+    height: 260px;
+    opacity: 0.8;
+    transition: 1s;
+  }
+
+  #work .link{
+	margin: 0 auto;
+	color: white;
+		padding: 0 10px;
+		border-radius: 15px;
+		box-shadow: 1px 1px 1px 1px white;
+	  width: 80px;
+	  background-color: black;
+	}
+
+  /* skill */
+
+  #skill{
+    max-width: 1080px;
+    background-color: rgba(179, 179, 179, 0.6);
+  }
+
+  #skill h2{
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 80px 0 50px 0;
+    text-shadow: 3px 3px 1px black;
+  }
+
+  #skill .list{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #skill .skill{
+    background-color: #808080;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: 3px double black;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+  #skill img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 20px 0 20px 20px;
+    float: left;
+  }
+
+  #skill .skill-name{
+    font-size: 25px;
+  }
+
+  /* contact */
+
+  #contact{
+    max-width: 1080px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(179, 179, 179, 0.6);
+  }
+
+  #contact h2{
+    font-style: oblique;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 80px;
+    text-shadow: 3px 3px 1px black;
+  }
+
+  #contact .text{
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0 50px 0;
+  }
+  #contact .title{
+    margin: auto;
+  }
+
+  #contact .contact-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
+
+  #contact form{
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 40px;
+    border-right: none;
+  }
+
+  #contact form input{
+    width: 250px;
+    height: 30px;
+  }
+
+  #contact form p{
+    margin: 5px 0 auto;
+  }
+
+  #contact form textarea {
+    width: 250px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  #contact .button{
+    font-size: 20px;
+    width: 250px;
+    height: 50px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 1px black;
+  }
+  #contact ul{
+    padding:0 ;
+    margin: 0 auto;
+  }
+  #contact li{
+    opacity: 0.8;
+    list-style: none;
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 20px 0 20px 10px;
+  }
+  #contact li:hover{
+    opacity: 1;
+  }
+  #contact li:active{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 1px 1px black;
+  }
+
+  #contact .sns-list{
+    margin: 0 auto;
+  }
+
+  #contact li .sns-list{
+    flex-wrap: wrap;
+    display: flex;
+    width: 480px;
+    margin-top: 10px;
+  }
+
+  #contact .sns-list img{
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    float: left;
+  }
+
+  #contact .sns-list span{
+    text-align: left;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+
+  .sns-list li{
+    border-radius: 15px;
+    display: block;
+    width: 100px;
+  }
+
+  .sns-list a{
+    width: 100%;
+    padding-top: 8px;
+    display: inline-block;
+  color: white;
+  text-decoration: none;
+
+  }
+
+  .sns-list .facebook{
+    background-color: rgba(24, 119, 242, 0.9);
+    box-shadow: 2px 2px 2px 2px black;
+    color: white;
+  }
+
+  .sns-list .twitter{
+    background-color: rgba(29, 161, 242, 0.9);
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+  .sns-list .instagram{
+    background-color: rgba(217, 49, 119, 0.9);
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+  /* pagetop */
+
+  footer{
+  }
+  #pagetop .pagetop{
+    width: auto;
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+    padding-top: 2px;
+    margin: 0;
+    background-color: rgba(178, 178, 178, 0.7);
+    text-shadow: 2px 2px 1px black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  #pagetop .pagetop:hover{
+    background-color: rgba(178, 178, 178, 1);
+    transition: 0.5s;
+  }
+
+  #pagetop a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  /* copyright */
+
+  #pagetop .copy-text{
+    text-align: center;
+    width: auto;
+    height: 30px;
+    margin: 0;
+    background-color: #4d4d4d;
+  }
+}
